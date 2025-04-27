@@ -13,8 +13,8 @@ title: Isabela Manelici
   <div class="profile-info">
     <p class="title">Assistant Professor of Economics</p>
     <p>Department of Economics</p>
-    <p>University College London</p>
-    <p class="email">Email: <a href="mailto:i.manelici@ucl.ac.uk">i.manelici@ucl.ac.uk</a></p>
+    <p>London School of Economics</p>
+    <p class="email">Email: <a href="mailto:i.manelici@lse.ac.uk">i.manelici@lse.ac.uk</a></p>
     <!-- Add any other contact information or links as needed -->
   </div>
 </div>
@@ -22,7 +22,7 @@ title: Isabela Manelici
 ## About
 
 <!-- PLACEHOLDER: Update with your bio information -->
-I am an Assistant Professor of Economics at University College London. My research interests include international trade, development economics, and industrial organization.
+I am an Assistant Professor of Economics at London School of Economics. My research interests include international trade and development economics.
 
 Prior to joining UCL, I completed my PhD in Economics at the University of California, Berkeley. My work examines how firms and workers respond to globalization, with a focus on developing countries.
 
@@ -30,13 +30,13 @@ Prior to joining UCL, I completed my PhD in Economics at the University of Calif
 
 ### Research Interests
 
-International Trade, Development Economics, Industrial Organization
+International Trade and Development Economics
 
 ### Publications
 
 <!-- PLACEHOLDER: Replace with your actual publications -->
 **"The Effects of Joining Multinational Supply Chains: New Evidence from Firm-to-Firm Linkages"**  
-(with Jose P. Vasquez)  
+(with Alonso Alfaro-Urena and Jose P. Vasquez)  
 *The Quarterly Journal of Economics*, Volume X, Issue Y, Month Year  
 [PDF](assets/pdf/papers/paper1.pdf) | [Journal Link](#) | [Online Appendix](#)
 
@@ -45,7 +45,7 @@ International Trade, Development Economics, Industrial Organization
 ### Working Papers
 
 <!-- PLACEHOLDER: Replace with your actual working papers -->
-**"Industrial Policy and Misallocation in the Presence of Global Value Chains"**  
+**"XXX"**  
 (with Author B and Author C)  
 Revise & Resubmit, Journal Name  
 [PDF](assets/pdf/papers/paper2.pdf) | [NBER Working Paper No. XXXXX](#)
