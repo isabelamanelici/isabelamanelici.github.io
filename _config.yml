@@ -1,0 +1,37 @@
+title: Isabela Manelici
+description: Assistant Professor of Economics at University College London
+url: "https://isabelamanelici.github.io"
+
+# Theme settings
+theme: minima  # Using minima as a base theme
+remote_theme: jekyll/minima
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Exclude files from being included in the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# Enable plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Customize the minima theme
+minima:
+  date_format: "%b %-d, %Y"
+
+# Social media links (optional)
+# social_links:
+#   twitter: username
+#   github: username
+#   linkedin: username
+
+# Google Analytics (optional)
+# google_analytics: UA-XXXXXXXX-X
