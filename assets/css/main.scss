@@ -41,3 +41,37 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+
+/* ----------------------------------------------------------------------
+   Isabela Manelici — L2 fidelity to the Wix site
+   Tokens extracted from docs/planning/wix-archive/wix_snapshot.html:
+     accent (headings, links) #8B0000   (DarkRed — Wix inline styles, 61 hits)
+     body text              #000000
+     body font family       helvetica-w01-roman,sans-serif → Helvetica/Arial
+     body size              17px
+   Start minimal; extend only if the Wix squint-test fails.
+   ---------------------------------------------------------------------- */
+
+body,
+.page__content {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  color: #000;
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3 {
+  color: #8B0000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  border-bottom: none;   /* stock academicpages underlines h1/h2 — Wix does not */
+}
+
+a {
+  color: #8B0000;
+}
+a:hover {
+  color: #5A0000;
+  text-decoration: underline;
+}
