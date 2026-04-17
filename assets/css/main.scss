@@ -107,11 +107,7 @@ a:hover {
   color: #8B0000;
 }
 
-/* Masthead: subtle border, brand title in red */
+/* Hide masthead entirely — Wix site has no top nav bar */
 .masthead {
-  border-bottom: 1px solid #e6e6e6;
-}
-.masthead__menu-item--lg a {
-  color: #8B0000;
-  font-weight: 700;
+  display: none;
 }

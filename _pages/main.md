@@ -6,8 +6,8 @@ author_profile: false
 ---
 
 <div style="float: left; margin: 7px 22px 10px 0;">
-  <img src="/images/lse_logo.png" width="200" alt="London School of Economics and Political Science" style="display: block;">
-  <img class="img-responsive" src="/images/headshot.jpg" width="200" alt="Isabela Manelici" style="display: block; margin-top: 10px;">
+  <img src="/images/lse_logo.png" width="240" alt="London School of Economics and Political Science" style="display: block;">
+  <img class="img-responsive" src="/images/headshot.jpg" width="280" alt="Isabela Manelici" style="display: block; margin-top: 14px;">
 </div>
 
 # Isabela Manelici
