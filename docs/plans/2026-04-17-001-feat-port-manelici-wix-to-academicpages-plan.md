@@ -79,27 +79,16 @@ Deployment target: `https://isabelamanelici.github.io` (Isabela's account `isabe
 
 Only what's actually load-bearing: headshot (we'll compress in Phase 4) + HTML snapshot (used in Phase 5 for link extraction).
 
-- [ ] **2.1** `mkdir -p files images docs/planning/wix-archive`
-- [ ] **2.2** Download original-resolution headshot:
-  ```bash
-  curl -sL "https://static.wixstatic.com/media/c7b5dd_50b4766ecb9c411e86456aa77184421c~mv2_d_3170_2910_s_4_2.jpg" \
-    -o docs/planning/wix-archive/headshot_wix_original.jpg
-  ```
-- [ ] **2.3** Save HTML snapshot for link extraction:
-  ```bash
-  curl -sL https://www.isabelamanelici.com -o docs/planning/wix-archive/wix_snapshot.html
-  ```
-- [ ] **2.4** Commit:
-  ```bash
-  git add docs/planning/wix-archive
-  git commit -m "chore: archive Wix headshot and HTML before retirement"
-  ```
+- [x] **2.1** `mkdir -p files images docs/planning/wix-archive`
+- [x] **2.2** Download original-resolution headshot (1.1 MB, 3170×2910).
+- [x] **2.3** Save HTML snapshot for link extraction (360 KB).
+- [x] **2.4** Commit.
 
 ---
 
 ### Phase 3 — Personalize `_config.yml` and write `_pages/main.md` (~30 min)
 
-- [ ] **3.1** Edit `_config.yml`:
+- [x] **3.1** Edit `_config.yml`:
   - `title:` → `"Isabela Manelici"`
   - `name: &name` → `"Isabela Manelici"`
   - `description:` → `"Personal website of Isabela Manelici — research in international trade, foreign direct investment, and labor economics."`
@@ -112,7 +101,7 @@ Only what's actually load-bearing: headshot (we'll compress in Phase 4) + HTML s
     - `googlescholar: "https://scholar.google.com/citations?user=XYTdVRAAAAAJ&hl=en"`
     - `employer: "London School of Economics"`
   - `google_analytics:` → blank (decision 11d).
-- [ ] **3.2** Replace `_pages/about.md` with `_pages/main.md` (accessibility baked in: `alt=""`, `<h1>` for name, `<h2>` for sections, "(PDF)" link text):
+- [x] **3.2** Replace `_pages/about.md` with `_pages/main.md` (accessibility baked in: `alt=""`, `<h1>` for name, `<h2>` for sections, "(PDF)" link text). Also deleted demo pages (cv.md, portfolio.html, publications.html, talks.html, teaching.html, archive templates) since we have no nav; only `404.md` and `sitemap.md` remain alongside `main.md`.
   ```markdown
   ---
   permalink: /
@@ -158,12 +147,8 @@ Only what's actually load-bearing: headshot (we'll compress in Phase 4) + HTML s
   - VoxDevLit on ["Foreign Direct Investment and Development"](#) (with Alviarez, Boudreau, Dardati, Fan, Farrokhi, Garcia-Lembergman, Garetto, Gu, Hale, Hemous, Limodio, Martin, Morales, Pandalai-Nayar, Pavcnik, Pellegrina, Ramondo, Vasquez, and Vezina). VoxDevLit, 13(1), February 2025.
   - 2024 WTO Trade Report on ["Trade and Inclusiveness"](#). Opinion Piece on "The Promise and Pitfalls of Responsible Sourcing in Global Value Chains", page 133 (with Alfaro-Ureña, Faber, Gaubert, and Vasquez).
   ```
-- [ ] **3.3** `rm -f _pages/about.md` — replaced by `main.md`.
-- [ ] **3.4** Commit:
-  ```bash
-  git add -A
-  git commit -m "feat: personalize _config.yml and write single-page landing"
-  ```
+- [x] **3.3** `rm -f _pages/about.md` — replaced by `main.md`.
+- [x] **3.4** Committed as `b15b1e0`.
 
 ---
 
