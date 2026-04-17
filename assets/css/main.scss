@@ -44,100 +44,74 @@
 
 /* ----------------------------------------------------------------------
    Isabela Manelici — L2 fidelity to the Wix site
-   Tokens extracted from docs/planning/wix-archive/wix_snapshot.html:
-     accent (headings, links) #8B0000   (DarkRed — Wix inline styles, 61 hits)
-     body text              #000000
-     body font family       helvetica-w01-roman,sans-serif → Helvetica/Arial
-     body size              17px
-   Start minimal; extend only if the Wix squint-test fails.
+   Tokens from docs/planning/wix-archive/wix_snapshot.html:
+     accent (headings, links):  #8B0000  (dark red)
+     body text:                 #000000
+     body font:                 Helvetica → system sans fallback
+   Style mirrors jpvasquez-econ.github.io (academicpages) but with
+   Wix-red accents instead of navy.
    ---------------------------------------------------------------------- */
 
-body,
-.page__content {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 17px;
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
+               "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Body links: black default, red on hover (Wix shows red-bold paper titles
+   and has muted inline links elsewhere). Override with .page__content
+   below for paper-title anchors. */
+a {
   color: #000;
 }
-
-.page__content h1,
-.page__content h2,
-.page__content h3 {
-  color: #8B0000;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  border-bottom: none;   /* stock academicpages underlines h1/h2 — Wix does not */
-}
-
-a {
-  color: #8B0000;
-}
 a:hover {
-  color: #5A0000;
+  color: #8B0000;
   text-decoration: underline;
 }
 
-/* Uppercase top-level H2 sections (matches Wix "RESEARCH" super-heading) */
-.page__content > h2 {
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-size: 1.1em;
-  margin-top: 1.8em;
+/* Top nav + masthead: name in accent red, simple hover bar */
+.greedy-nav a {
+  display: block;
+  margin: 0 1rem;
+  padding: 0 0;
+  color: #8B0000;
+  text-decoration: none;
 }
 
-/* Hero block at top of landing page: headshot on the left, LSE logo + name on the right.
-   Floats and wraps so bio paragraph sits to the right of the headshot on desktop. */
-.manelici-hero {
-  margin: 0.5em 0 1em 0;
-  overflow: hidden;   /* contain floats */
+/* Section headings — red, underlined like Jose's navy ones */
+.page__content h1 {
+  color: #8B0000;
+  margin-bottom: 1em;
+  margin-top: 1.2em;
 }
-.manelici-headshot {
-  float: left;
-  margin: 4px 22px 10px 0;
-  width: 220px;
-  height: auto;
-  display: block;
-}
-.manelici-hero-text {
-  /* name + LSE logo stack */
-}
-.manelici-lse-logo {
-  display: block;
-  width: 180px;
-  height: auto;
-  margin: 0 0 0.35em 0;
-}
-.manelici-hero-text h1 {
-  margin: 0;
-  font-size: 2em;
-  color: #000;   /* name in black, like Wix */
-  font-weight: bold;
-}
-@media (max-width: 640px) {
-  .manelici-headshot {
-    float: none;
-    margin: 0 auto 1em;
-  }
-  .manelici-lse-logo {
-    margin: 0 auto 0.5em;
-  }
-  .manelici-hero-text {
-    text-align: center;
-  }
+.page__content h2 {
+  color: #8B0000;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #f3f1f4;
+  margin-top: 1.2em;
 }
 
-/* Masthead (top nav): clean border, hover in accent color */
+/* Paper list items: denser spacing; titles (bold links) in red */
+.page__content li,
+.page__content dl {
+  font-size: 0.9em;
+}
+.page__content li strong a,
+.page__content li a strong {
+  color: #8B0000;
+}
+.page__content li > a:first-child > strong {
+  color: #8B0000;
+}
+
+/* Masthead: subtle border, brand title in red */
 .masthead {
   border-bottom: 1px solid #e6e6e6;
 }
-.greedy-nav,
-.greedy-nav .visible-links a {
-  background: #fff;
-  color: #000;
-}
-.greedy-nav a:hover {
-  color: #8B0000;
-}
 .masthead__menu-item--lg a {
   color: #8B0000;
-  font-weight: 600;
+  font-weight: 700;
 }
