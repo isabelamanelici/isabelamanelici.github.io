@@ -173,7 +173,9 @@ exclude:
   - CHANGELOG
   - Capfile
   - config
+  - docs
   - Dockerfile
+  - docker-compose.yaml
   - Gemfile
   - Gruntfile.js
   - gulpfile.js
@@ -185,7 +187,7 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - vendor
+  - /vendor
 keep_files:
   - .git
   - .svn

@@ -12,8 +12,8 @@ Gemfile.lock
 node_modules
 package-lock.json
 
-# Ignore the vendor file and bundle for alternative installation
-vendor/
+# Ignore the root-level bundle install path (but NOT _sass/vendor/ — those ship)
+/vendor/
 .bundle/
 
 # Ignore folders related to IDEs
