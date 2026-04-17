@@ -6,8 +6,8 @@ author_profile: false
 ---
 
 <div style="float: left; margin: 7px 22px 10px 0;">
-  <img class="img-responsive" src="/images/headshot.jpg" width="200" alt="" style="display: block;">
-  <img src="/images/lse_logo.png" width="200" alt="London School of Economics and Political Science" style="display: block; margin-top: 10px;">
+  <img src="/images/lse_logo.png" width="200" alt="London School of Economics and Political Science" style="display: block;">
+  <img class="img-responsive" src="/images/headshot.jpg" width="200" alt="" style="display: block; margin-top: 10px;">
 </div>
 
 Welcome to my website! I am an Assistant Professor in the [Department of Economics](https://www.lse.ac.uk/economics) of the [London School of Economics and Political Science](https://www.lse.ac.uk). I was awarded a 2025-2030 ERC Starting Grant for *"LINK4DEV: Can Multinational Linkages Be Leveraged for Development?"*.

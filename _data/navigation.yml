@@ -1,10 +1,2 @@
-# Top-nav links. Anchor links to sections on the single landing page,
-# plus a CV and Scholar link. Matches the Wix site's "Home / More" UX
-# without the empty-dropdown dead end.
+# Empty — Wix has no top nav; we match that.
 main:
-  - title: "Research"
-    url: /#research
-  - title: "CV"
-    url: /files/CV_Manelici.pdf
-  - title: "Google Scholar"
-    url: https://scholar.google.com/citations?user=XYTdVRAAAAAJ&hl=en
