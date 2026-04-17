@@ -6,9 +6,13 @@ author_profile: false
 ---
 
 <div style="float: left; margin: 7px 22px 10px 0;">
-  <img class="img-responsive" src="/images/headshot.jpg" width="200" alt="Isabela Manelici" style="display: block;">
-  <img src="/images/lse_logo.png" width="200" alt="London School of Economics and Political Science" style="display: block; margin-top: 10px;">
+  <img src="/images/lse_logo.png" width="200" alt="London School of Economics and Political Science" style="display: block;">
+  <img class="img-responsive" src="/images/headshot.jpg" width="200" alt="Isabela Manelici" style="display: block; margin-top: 10px;">
 </div>
+
+# Isabela Manelici
+
+<div style="text-align: justify;" markdown="1">
 
 Welcome to my website! I am an Assistant Professor in the [Department of Economics](https://www.lse.ac.uk/economics) of the [London School of Economics and Political Science](https://www.lse.ac.uk). I was awarded a 2025-2030 ERC Starting Grant for *"LINK4DEV: Can Multinational Linkages Be Leveraged for Development?"*.
 
@@ -21,6 +25,8 @@ I am affiliated with the [CEP](https://cep.lse.ac.uk) (Centre for Economic Perfo
 **Email:** <i.manelici@lse.ac.uk>.
 
 Note on Ph.D. admissions, RA and postdoc opportunities: [read the note (PDF)](/files/PhD_Note.pdf).
+
+</div>
 
 ---
 
