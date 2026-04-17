@@ -31,7 +31,7 @@ Note on Ph.D. admissions, RA and postdoc opportunities: [read the note (PDF)](/f
 
 ## Peer-reviewed publications
 
-- [<u>**The Effects of Joining Multinational Supply Chains: New Evidence from Firm-to-Firm Linkages**</u>](/files/Effects_of_Joining_MNC_Supply_Chains_QJE.pdf) with Alonso Alfaro-Ureña and José P. Vasquez. *Quarterly Journal of Economics*, 137(3), Aug. 2022, 1495–1552 ([Online Appendix](/files/JoiningMNC_OnlineAppendix.pdf)). Media: [VoxDev](#) · [IGC](#) · [The Visible Hand podcast](#) · [Faculti interview](#) · [LSE Business Review](#).
+- [<u>**The Effects of Joining Multinational Supply Chains: New Evidence from Firm-to-Firm Linkages**</u>](/files/Effects_of_Joining_MNC_Supply_Chains_QJE.pdf) with Alonso Alfaro-Ureña and José P. Vasquez. *Quarterly Journal of Economics*, 137(3), Aug. 2022, 1495–1552. [Working paper w/ online appendix (PDF)](/files/Effects_of_Joining_MNC_Supply_Chains_QJE.pdf). Media: [VoxDev](#) · [IGC](#) · [The Visible Hand podcast](#) · [Faculti interview](#) · [LSE Business Review](#).
 - [<u>**Industrial Policy at Work: Evidence from Romania's Income Tax Break for Workers in IT**</u>](/files/IndustrialPolicy_EER.pdf) with Smaranda Pantea. *European Economic Review*, 133, Apr. 2021 ([Online Appendix](/files/IndustrialPolicy_OnlineAppendix.pdf)). Media: [Trade Talks](#) · [VoxEU](#) · [Presentation recording](#).
 - [<u>**Terrorism and the Value of Proximity to Public Transportation: Evidence from the London Bombings**</u>](/files/Terrorism_JUE.pdf). *Journal of Urban Economics*, 102, Nov. 2017, 52-75.
 
@@ -40,4 +40,4 @@ Note on Ph.D. admissions, RA and postdoc opportunities: [read the note (PDF)](/f
 - London Consensus response to Ricardo Hausmann's chapter on "Export-Led Growth". *London Consensus, Economic Principles for the 21st Century.* Edited by Tim Besley, Irene Bucelli and Andrés Velasco. LSE Press, October 2025.
 - VoxDevLit on ["International Trade"](#) (with Atkin, Boudreau, Dix-Carneiro, Khandelwal, McCaig, Medina, Morjaria, Pascali, Pellegrina, Rijkers, and Startz). VoxDevLit, 4(2), February 2025.
 - VoxDevLit on ["Foreign Direct Investment and Development"](#) (with Alviarez, Boudreau, Dardati, Fan, Farrokhi, Garcia-Lembergman, Garetto, Gu, Hale, Hemous, Limodio, Martin, Morales, Pandalai-Nayar, Pavcnik, Pellegrina, Ramondo, Vasquez, and Vezina). VoxDevLit, 13(1), February 2025.
-- 2024 WTO Trade Report on ["Trade and Inclusiveness"](#). Opinion Piece on "The Promise and Pitfalls of Responsible Sourcing in Global Value Chains", page 133 (with Alfaro-Ureña, Faber, Gaubert, and Vasquez).
+- 2024 WTO Trade Report on ["Trade and Inclusiveness"](/files/WTO_Report_2024.pdf). Opinion Piece on "The Promise and Pitfalls of Responsible Sourcing in Global Value Chains", page 133 (with Alfaro-Ureña, Faber, Gaubert, and Vasquez).
