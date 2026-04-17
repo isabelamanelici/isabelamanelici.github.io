@@ -84,14 +84,44 @@ a:hover {
   margin-top: 1.8em;
 }
 
-/* Sidebar: make the fixed left panel visually distinct from content */
-@media (min-width: 1024px) {
-  .sidebar.sticky {
-    border-right: 1px solid #e6e6e6;
-    padding-right: 1.25em;
+/* Hero block at top of landing page: headshot on the left, LSE logo + name on the right.
+   Floats and wraps so bio paragraph sits to the right of the headshot on desktop. */
+.manelici-hero {
+  margin: 0.5em 0 1em 0;
+  overflow: hidden;   /* contain floats */
+}
+.manelici-headshot {
+  float: left;
+  margin: 4px 22px 10px 0;
+  width: 220px;
+  height: auto;
+  display: block;
+}
+.manelici-hero-text {
+  /* name + LSE logo stack */
+}
+.manelici-lse-logo {
+  display: block;
+  width: 180px;
+  height: auto;
+  margin: 0 0 0.35em 0;
+}
+.manelici-hero-text h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #000;   /* name in black, like Wix */
+  font-weight: bold;
+}
+@media (max-width: 640px) {
+  .manelici-headshot {
+    float: none;
+    margin: 0 auto 1em;
   }
-  .sidebar .author__name {
-    color: #8B0000;
+  .manelici-lse-logo {
+    margin: 0 auto 0.5em;
+  }
+  .manelici-hero-text {
+    text-align: center;
   }
 }
 
