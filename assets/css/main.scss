@@ -75,3 +75,39 @@ a:hover {
   color: #5A0000;
   text-decoration: underline;
 }
+
+/* Uppercase top-level H2 sections (matches Wix "RESEARCH" super-heading) */
+.page__content > h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 1.1em;
+  margin-top: 1.8em;
+}
+
+/* Sidebar: make the fixed left panel visually distinct from content */
+@media (min-width: 1024px) {
+  .sidebar.sticky {
+    border-right: 1px solid #e6e6e6;
+    padding-right: 1.25em;
+  }
+  .sidebar .author__name {
+    color: #8B0000;
+  }
+}
+
+/* Masthead (top nav): clean border, hover in accent color */
+.masthead {
+  border-bottom: 1px solid #e6e6e6;
+}
+.greedy-nav,
+.greedy-nav .visible-links a {
+  background: #fff;
+  color: #000;
+}
+.greedy-nav a:hover {
+  color: #8B0000;
+}
+.masthead__menu-item--lg a {
+  color: #8B0000;
+  font-weight: 600;
+}
