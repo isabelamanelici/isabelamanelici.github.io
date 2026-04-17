@@ -54,20 +54,20 @@ Deployment target: `https://isabelamanelici.github.io` (Isabela's account `isabe
 
 ### Phase 1 — Scaffold academicpages into the empty repo (~15 min)
 
-- [ ] **1.1** `cd "/Users/j.p.vasquez/Library/CloudStorage/Dropbox/Academic Sharing Isa-JP/Research and pupici/isabelamanelici.github.io/"`
-- [ ] **1.2** `ls -la` — confirm only `.git`, `.DS_Store`, and `docs/` present. If anything else, stop and investigate.
-- [ ] **1.3** Tarball-overlay academicpages v0.8.4:
+- [x] **1.1** `cd "/Users/j.p.vasquez/Library/CloudStorage/Dropbox/Academic Sharing Isa-JP/Research and pupici/isabelamanelici.github.io/"`
+- [x] **1.2** `ls -la` — confirm only `.git`, `.DS_Store`, and `docs/` present. If anything else, stop and investigate.
+- [x] **1.3** Tarball-overlay academicpages v0.8.4:
   ```bash
   curl -L https://github.com/academicpages/academicpages.github.io/archive/refs/tags/v0.8.4.tar.gz | tar xz --strip-components=1
   rm -rf .github
   rm -f CNAME
   ```
-- [ ] **1.4** Delete empty demo collections (DHH — no participation trophies):
+- [x] **1.4** Delete empty demo collections (DHH — no participation trophies):
   ```bash
   rm -rf _publications _talks _teaching _posts
   ```
   These can always be re-added later if we ever execute `future-scholar-seo.md`.
-- [ ] **1.5** Commit:
+- [x] **1.5** Commit:
   ```bash
   git add -A
   git commit -m "feat: scaffold academicpages v0.8.4 template baseline"
