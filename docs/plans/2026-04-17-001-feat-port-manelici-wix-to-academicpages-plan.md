@@ -152,9 +152,11 @@ Only what's actually load-bearing: headshot (we'll compress in Phase 4) + HTML s
 
 ---
 
-### Phase 4 — Drop PDFs and optimize images (~30 min, Jose action)
+### Phase 4 — Drop PDFs and optimize images (~30 min, Jose action) ✅ COMPLETED via Wix download
 
-- [ ] **4.1** Jose places the 9 local PDFs into `files/`. Expected filenames (update `_pages/main.md` if Jose uses different names):
+Claude downloaded all 9 PDFs from Wix (mapped hashes to readable names by parsing the HTML snapshot), verified each PDF's content, and committed. Discovered the QJE paper has one combined working-paper+appendix PDF (not two), and added a WTO Trade Report PDF that was missing from the original plan.
+
+- [x] **4.1** 9 PDFs placed in `files/` with readable names:
   ```
   files/CV_Manelici.pdf
   files/Responsible_Sourcing_CR.pdf
@@ -166,30 +168,18 @@ Only what's actually load-bearing: headshot (we'll compress in Phase 4) + HTML s
   files/Terrorism_JUE.pdf
   files/PhD_Note.pdf
   ```
-- [ ] **4.2** Optimize headshot (macOS built-in `sips`, no install needed):
-  ```bash
-  sips -Z 440 docs/planning/wix-archive/headshot_wix_original.jpg \
-       --setProperty formatOptions 82 \
-       --out images/headshot.jpg
-  ls -lh images/headshot.jpg  # expect < 100 KB
-  ```
-- [ ] **4.3** LSE logo — skipped for now. Placeholder = no image. Phase 9 handoff item asks Isabela for official SVG.
-- [ ] **4.4** Commit:
-  ```bash
-  git add files/ images/
-  git commit -m "feat: add Isabela's PDFs and optimized headshot"
-  ```
+- [x] **4.2** Headshot optimized via `sips -Z 440 --setProperty formatOptions 82`. Final: 41 KB, 440×404 (vs 1.1 MB 3170×2910 original).
+- [x] **4.3** LSE logo skipped — no image on landing page. Phase 9 handoff requests official SVG from Isabela.
+- [x] **4.4** Committed as `60961f9` (PDFs) + `7e184d3` (headshot).
 
 ---
 
-### Phase 5 — Fill in external links (~20 min)
+### Phase 5 — Fill in external links ✅ COMPLETED via Wix HTML parsing
 
-- [ ] **5.1** Open `docs/planning/wix-archive/wix_snapshot.html` in a browser. For each `(#)` in `_pages/main.md`, paste the real URL from the Wix HTML. Work section-by-section.
-- [ ] **5.2** Commit:
-  ```bash
-  git add _pages/main.md
-  git commit -m "feat: populate external links"
-  ```
+Claude extracted all 35 external URLs from `wix_snapshot.html` and filled all `(#)` placeholders. Added journal-article links for the 3 peer-reviewed papers (QJE, EER, JUE) and NBER WP link for Responsible Sourcing. LINK4DEV ERC grant: plain text (matches Wix — not linked there either). Smaranda Pantea's VSE page 404s on Wix too, so link dropped — Isabela can add her current URL during review.
+
+- [x] **5.1** All 9 `(#)` placeholders replaced with real Wix URLs.
+- [x] **5.2** Committed as `07099dc`.
 
 ---
 
@@ -242,7 +232,7 @@ Only what's actually load-bearing: headshot (we'll compress in Phase 4) + HTML s
 ### Phase 7 — Apply L2 visual styling (~2-4 hours, iterative)
 
 - [ ] **7.1** Open Wix in one browser window with DevTools; `assets/css/main.scss` in editor. Use ⌘⇧C to inspect elements on Wix and read computed values.
-- [ ] **7.2** Add a starter 3-override block at the end of `main.scss` (after `@import`s). Replace `<X>` with computed values:
+- [x] **7.2** Starter CSS override block committed (`b549f0d`). Extracted tokens from `wix_snapshot.html`: accent `#8B0000` (dark red, 61 occurrences), body font Helvetica/Arial, body 17px. Starter block applies accent color to headings/links, removes stock h1/h2 underlines. Jose iterates from here.
   ```scss
   /* Isabela Manelici — L2 fidelity to Wix */
   .page__content h1,
