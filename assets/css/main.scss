@@ -45,7 +45,7 @@
 /* ----------------------------------------------------------------------
    Isabela Manelici — L2 fidelity to the Wix site
    Tokens from docs/planning/wix-archive/wix_snapshot.html:
-     accent (headings, links):  #8B0000  (dark red)
+     accent (headings, links):  #6b0000  (muted dark red)
      body text:                 #000000
      body font:                 Helvetica → system sans fallback
    Style mirrors jpvasquez-econ.github.io (academicpages) but with
@@ -58,22 +58,24 @@ body {
   color: #000;
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
                "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.45;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
 /* Tighten body text to match Wix density */
 .page__content {
-  font-size: 14px;
-  line-height: 1.45;
+  font-size: 13px;
+  line-height: 1.5;
 }
 .page__content p {
-  margin: 0 0 0.75em 0;
+  margin: 0 0 0.9em 0;
 }
 .page__content h1 {
-  font-size: 1.9em;
-  font-weight: 500;
-  margin-top: 0.3em;
+  font-size: 3em;
+  font-weight: 300;
+  margin-top: 0.2em;
+  margin-bottom: 0.4em;
+  letter-spacing: -0.01em;
 }
 .page__content h2 {
   font-size: 1.3em;
@@ -85,7 +87,7 @@ body {
 .page__content h3 {
   font-size: 1.05em;
   font-weight: 600;
-  color: #8B0000;
+  color: #6b0000;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
@@ -93,12 +95,21 @@ body {
 /* Paper entries: multi-line blocks with no bullet, tight spacing */
 .page__content p.pub {
   margin: 0 0 1.1em 0;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 .page__content p.pub strong a,
 .page__content p.pub a strong,
 .page__content p.pub > strong:first-child {
-  color: #8B0000;
+  color: #6b0000;
+}
+/* Paper title links: bold red, NO underline; underline on hover only */
+.page__content p.pub strong a,
+.page__content p.pub a strong {
+  text-decoration: none;
+}
+.page__content p.pub strong a:hover,
+.page__content p.pub a:hover strong {
+  text-decoration: underline;
 }
 
 /* Widen content area (Wix is roomier than academicpages default) */
@@ -116,7 +127,7 @@ a {
   color: #000;
 }
 a:hover {
-  color: #8B0000;
+  color: #6b0000;
   text-decoration: underline;
 }
 
@@ -125,18 +136,18 @@ a:hover {
   display: block;
   margin: 0 1rem;
   padding: 0 0;
-  color: #8B0000;
+  color: #6b0000;
   text-decoration: none;
 }
 
 /* Section headings — red, underlined like Jose's navy ones */
 .page__content h1 {
-  color: #8B0000;
+  color: #6b0000;
   margin-bottom: 1em;
   margin-top: 1.2em;
 }
 .page__content h2 {
-  color: #8B0000;
+  color: #6b0000;
   padding-bottom: 0.5em;
   border-bottom: 1px solid #f3f1f4;
   margin-top: 1.2em;
@@ -149,10 +160,10 @@ a:hover {
 }
 .page__content li strong a,
 .page__content li a strong {
-  color: #8B0000;
+  color: #6b0000;
 }
 .page__content li > a:first-child > strong {
-  color: #8B0000;
+  color: #6b0000;
 }
 
 /* Hide masthead entirely — Wix site has no top nav bar */
