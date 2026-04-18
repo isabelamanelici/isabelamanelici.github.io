@@ -112,12 +112,16 @@ body {
   text-decoration: underline;
 }
 
-/* Widen content area (Wix is roomier than academicpages default) */
-@media (min-width: 80em) {
-  .page {
-    width: 100%;
-    padding-right: 0;
-  }
+/* Widen content area to match Wix (Wix is roomier than academicpages default) */
+.page {
+  width: 100% !important;
+  padding-right: 0 !important;
+  float: none !important;
+}
+#main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1em 1.5em;
 }
 
 /* All content links: muted LSE-red, underlined (matches Wix) */
