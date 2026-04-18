@@ -72,11 +72,41 @@ body {
 }
 .page__content h1 {
   font-size: 1.9em;
-  font-weight: 600;
+  font-weight: 500;
+  margin-top: 0.3em;
 }
 .page__content h2 {
-  font-size: 1.25em;
+  font-size: 1.3em;
   font-weight: 600;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: 1.3em;
+}
+.page__content h3 {
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #8B0000;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* Paper entries: multi-line blocks with no bullet, tight spacing */
+.page__content p.pub {
+  margin: 0 0 1.1em 0;
+  line-height: 1.45;
+}
+.page__content p.pub strong a,
+.page__content p.pub a strong,
+.page__content p.pub > strong:first-child {
+  color: #8B0000;
+}
+
+/* Widen content area (Wix is roomier than academicpages default) */
+@media (min-width: 80em) {
+  .page {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 
 /* Body links: black default, red on hover (Wix shows red-bold paper titles
