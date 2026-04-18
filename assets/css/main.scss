@@ -120,13 +120,11 @@ body {
   }
 }
 
-/* Body links: black default, red on hover (Wix shows red-bold paper titles
-   and has muted inline links elsewhere). Override with .page__content
-   below for paper-title anchors. */
-a {
-  color: #000;
+/* All content links: muted LSE-red, underlined (matches Wix) */
+.page__content a {
+  color: #6b0000;
 }
-a:hover {
+.page__content a:hover {
   color: #6b0000;
   text-decoration: underline;
 }
