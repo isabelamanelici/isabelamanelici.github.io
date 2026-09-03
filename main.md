@@ -46,7 +46,7 @@ Status: New draft in progress
 **[The Effects of Joining Multinational Supply Chains: New Evidence from Firm-to-Firm Linkages](https://academic.oup.com/qje/article/137/3/1495/6517334)**  
 with [Alonso Alfaro-Ureña](https://sites.google.com/view/alfarourena/home) and [José P. Vasquez](https://jpvasquez-econ.github.io/)  
 *Quarterly Journal of Economics*, 137(3), August 2022, 1495–1552. [Working paper w/ online appendix (PDF)](/files/Effects_of_Joining_MNC_Supply_Chains_QJE.pdf)  
-Media: [VoxDev](https://voxdev.org/topic/firms-trade/boosting-firm-productivity-through-joining-multinational-supply-chains), [IGC](https://www.theigc.org/blog/new-research-findings-on-firms-in-five-graphs/), [The Visible Hand podcast](https://www.thevisiblehand.uk/episodes/episode-13), [Faculti interview](https://faculti.net/the-effects-of-joining-multinational-supply-chains/), [LSE Business Review](https://blogs.lse.ac.uk/businessreview/2023/11/21/joining-multinationals-supply-chains-can-benefit-domestic-firms-performance/)
+Media: [VoxDev](https://voxdev.org/topic/firms/boosting-firm-productivity-through-joining-multinational-supply-chains), [IGC](https://www.theigc.org/blog/new-research-findings-on-firms-in-five-graphs/), [The Visible Hand podcast](https://www.thevisiblehand.uk/episodes/episode-13), [Faculti interview](https://faculti.net/the-effects-of-joining-multinational-supply-chains/), [LSE Business Review](https://blogs.lse.ac.uk/businessreview/2023/11/21/joining-multinationals-supply-chains-can-benefit-domestic-firms-performance/)
 
 **[Industrial Policy at Work: Evidence from Romania&#39;s Income Tax Break for Workers in IT](https://www.sciencedirect.com/science/article/pii/S0014292121000271)**  
 with Smaranda Pantea  
