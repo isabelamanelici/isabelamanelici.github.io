@@ -58,13 +58,13 @@ body {
   color: #000;
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto",
                "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
-/* Tighten body text to match Wix density */
+/* Body text size matches jpvasquez-econ.github.io (18px desktop) */
 .page__content {
-  font-size: 13px;
+  font-size: 18px;
   line-height: 1.5;
 }
 .page__content p {
@@ -72,7 +72,7 @@ body {
   text-align: justify;
 }
 .page__content h1 {
-  font-size: 3em;
+  font-size: 2.2em;
   font-weight: 300;
   margin-top: 0.2em;
   margin-bottom: 0.4em;
