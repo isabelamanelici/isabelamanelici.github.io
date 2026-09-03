@@ -184,8 +184,10 @@ exclude:
   - log
   - node_modules
   - package.json*
+  - preview.sh
   - Rakefile
   - README
+  - README.md
   - tmp
   - /vendor
 keep_files:

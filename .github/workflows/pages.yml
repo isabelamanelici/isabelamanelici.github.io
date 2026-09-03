@@ -1,0 +1,53 @@
+name: Build and deploy site
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Stage site source
+        run: |
+          set -euo pipefail
+          rm -rf _stage
+          mkdir _stage
+          cp -R everything_else/. _stage/
+          cp -R files images _stage/
+          {
+            printf -- '---\npermalink: /\ntitle: ""\nauthor_profile: false\n---\n'
+            cat main.md
+          } > _stage/index.md
+      - name: Soft checks (warn only, never fail)
+        run: |
+          # odd number of ** => probably an unclosed bold
+          n=$(grep -o '\*\*' main.md | wc -l || true); [ $((n % 2)) -eq 0 ] || echo "::warning file=main.md::Unbalanced ** in main.md (count=$n)"
+          # links: every [ should have a matching ](
+          a=$(grep -o '\[' main.md | wc -l || true); b=$(grep -o '](' main.md | wc -l || true); [ "$a" -eq "$b" ] || echo "::warning file=main.md::Possible broken link syntax in main.md ([=$a, ](=$b)"
+          # PDF names: letters, digits, _ - . only
+          for f in files/*; do [ -e "$f" ] || continue; case "$(basename "$f")" in *[!A-Za-z0-9_.-]*) echo "::warning::File name with spaces/special chars in files/: $f (links to it will break)";; esac; done
+      - uses: actions/configure-pages@v5
+      - uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./_stage
+          destination: ./_site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
