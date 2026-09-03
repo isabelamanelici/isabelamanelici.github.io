@@ -68,7 +68,8 @@ body {
   line-height: 1.5;
 }
 .page__content p {
-  margin: 0 0 0.9em 0;
+  margin: 0 0 1.1em 0;
+  text-align: justify;
 }
 .page__content h1 {
   font-size: 3em;
@@ -93,23 +94,15 @@ body {
   margin-bottom: 0.5em;
 }
 
-/* Paper entries: multi-line blocks with no bullet, tight spacing */
-.page__content p.pub {
-  margin: 0 0 1.1em 0;
-  line-height: 1.5;
-}
-.page__content p.pub strong a,
-.page__content p.pub a strong,
-.page__content p.pub > strong:first-child {
+/* Paper titles: bold red, with link underlines only on hover */
+.page__content p > strong:first-child {
   color: #6b0000;
 }
-/* Paper title links: bold red, NO underline; underline on hover only */
-.page__content p.pub strong a,
-.page__content p.pub a strong {
+.page__content p > strong:first-child a {
+  color: #6b0000;
   text-decoration: none;
 }
-.page__content p.pub strong a:hover,
-.page__content p.pub a:hover strong {
+.page__content p > strong:first-child a:hover {
   text-decoration: underline;
 }
 
