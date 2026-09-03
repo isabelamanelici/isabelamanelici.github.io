@@ -20,6 +20,7 @@ rm -rf "$STAGE_DIR" "$SUPPORT_DIR"
 mkdir "$STAGE_DIR" "$SUPPORT_DIR"
 cp -R "$SCRIPT_DIR/." "$STAGE_DIR/"
 cp -R "$REPO_ROOT/files" "$REPO_ROOT/images" "$STAGE_DIR/"
+cp "$REPO_ROOT/images/favicon.ico" "$STAGE_DIR/favicon.ico"
 {
   printf -- '---\npermalink: /\ntitle: ""\nauthor_profile: false\n---\n'
   cat "$REPO_ROOT/main.md"

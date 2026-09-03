@@ -22,6 +22,7 @@ jobs:
           mkdir _stage
           cp -R everything_else/. _stage/
           cp -R files images _stage/
+          cp images/favicon.ico _stage/favicon.ico
           {
             printf -- '---\npermalink: /\ntitle: ""\nauthor_profile: false\n---\n'
             cat main.md
