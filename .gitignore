@@ -20,3 +20,9 @@ package-lock.json
 .vscode/
 *.DS_Store
 .DS_Store
+
+# Build staging / output (workflow + preview.sh)
+_stage/
+_site/
+everything_else/_site/
+.jekyll-cache/
