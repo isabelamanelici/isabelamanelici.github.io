@@ -13,7 +13,7 @@ title                    : "Isabela Manelici"
 title_separator          : "-"
 name                     : &name "Isabela Manelici"
 description              : &description "Personal website of Isabela Manelici — Assistant Professor of Economics at LSE. Research in international trade, foreign direct investment, and labor economics."
-url                      : https://isabelamanelici.github.io
+url                      : https://www.isabelamanelici.com
 baseurl                  : ""
 repository               : "isabelamanelici/isabelamanelici.github.io"
 
