@@ -97,7 +97,10 @@
 2. Provide original high-res headshot JPEG (Wix downsample used meanwhile).
 3. Provide final PDF versions (Wix copies used meanwhile).
 4. Post-launch content review pass (fix any scraping errors).
-5. Eventually: decide on CNAME / DNS migration of `isabelamanelici.com` and Wix shutdown date.
+5. ~~Migrate the `isabelamanelici.com` CNAME and DNS to GitHub Pages.~~ ✅ **Completed 2026-09-03.**
+6. ~~Choose a Wix shutdown date.~~ **Moot:** the Wix plan expired.
+7. Renew the domain at Network Solutions/Wix before **2026-10-09**.
+8. GitHub Pages is now built by GitHub Actions from `everything_else/`; see the [repository-layout plan](../plans/2026-09-03-001-refactor-isabela-friendly-repo-layout-plan.md).
 
 ---
 

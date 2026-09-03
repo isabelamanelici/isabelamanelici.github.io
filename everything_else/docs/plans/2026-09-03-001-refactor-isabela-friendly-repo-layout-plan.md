@@ -116,16 +116,16 @@ Answer: **Yes, proceed to ce-plan**
 
 ### Phase 1 — Move files (pure `git mv`, one commit, no content edits)
 
-- [ ] 1.0 `git tag pre-restructure f07605a` (rollback anchor; Jose pushes tags with `git push --tags`).
-- [ ] 1.1 `mkdir everything_else` and `git mv` into it: `_config.yml _layouts _includes _sass _data _pages assets Gemfile LICENSE README.md docs CNAME`.
-- [ ] 1.2 `git mv everything_else/_pages/main.md main.md` (content untouched in this commit); `git rm everything_else/_pages/sitemap.md`.
-- [ ] 1.3 `git rm -r Dockerfile docker-compose.yaml .devcontainer package.json CONTRIBUTING.md`; `git rm --cached .DS_Store` (already in `.gitignore`).
-- [ ] 1.4 `.gitignore`: add `_stage/`, `_site/`, `everything_else/_site/`, `.jekyll-cache/`.
-- [ ] 1.5 Commit: `refactor: move Jekyll internals into everything_else/, main.md to root`. Verify `git show --stat` shows renames (similarity 100 %) and exactly 7 deletions (Dockerfile, docker-compose.yaml, .devcontainer/devcontainer.json, package.json, CONTRIBUTING.md, _pages/sitemap.md, .DS_Store).
+- [x] 1.0 `git tag pre-restructure f07605a` (rollback anchor; Jose pushes tags with `git push --tags`).
+- [x] 1.1 `mkdir everything_else` and `git mv` into it: `_config.yml _layouts _includes _sass _data _pages assets Gemfile LICENSE README.md docs CNAME`.
+- [x] 1.2 `git mv everything_else/_pages/main.md main.md` (content untouched in this commit); `git rm everything_else/_pages/sitemap.md`.
+- [x] 1.3 `git rm -r Dockerfile docker-compose.yaml .devcontainer package.json CONTRIBUTING.md`; `git rm --cached .DS_Store` (already in `.gitignore`).
+- [x] 1.4 `.gitignore`: add `_stage/`, `_site/`, `everything_else/_site/`, `.jekyll-cache/`.
+- [x] 1.5 Commit: `refactor: move Jekyll internals into everything_else/, main.md to root`. Verify `git show --stat` shows renames (similarity 100 %) and exactly 7 deletions (Dockerfile, docker-compose.yaml, .devcontainer/devcontainer.json, package.json, CONTRIBUTING.md, _pages/sitemap.md, .DS_Store).
 
 ### Phase 2 — Workflow + staging
 
-- [ ] 2.1 Create `.github/workflows/pages.yml`:
+- [x] 2.1 Create `.github/workflows/pages.yml`:
 
 ```yaml
 name: Build and deploy site
@@ -183,14 +183,14 @@ jobs:
         uses: actions/deploy-pages@v5
 ```
 
-- [ ] 2.2 In `everything_else/_config.yml`: `include:` keep `_pages`, `files`; in the single `exclude:` block (line 162) add `preview.sh` and `README.md` (`docs`, `Gemfile`, `LICENSE`, `README` prefix already there). Leave `url`, `baseurl`, `defaults` unchanged.
-- [ ] 2.3 `everything_else/preview.sh` (executable): same staging commands as 2.1 but into `${TMPDIR:-/tmp}/manelici-stage`, then `bundle exec jekyll serve --source <stage> --destination <stage>/_site -l` with `PATH=/opt/homebrew/opt/ruby/bin:$PATH`, `BUNDLE_PATH=$HOME/.cache/bundle-manelici`, `BUNDLE_GEMFILE` pointing at a scratch Gemfile the script writes (eval_gemfile of `everything_else/Gemfile` + `csv base64 bigdecimal logger ostruct`), and `RUBYOPT=-r<shim> -W0` where the shim defines `Object#tainted?/taint/untaint`. Stage dir outside Dropbox by construction.
+- [x] 2.2 In `everything_else/_config.yml`: `include:` keep `_pages`, `files`; in the single `exclude:` block (line 162) add `preview.sh` and `README.md` (`docs`, `Gemfile`, `LICENSE`, `README` prefix already there). Leave `url`, `baseurl`, `defaults` unchanged.
+- [x] 2.3 `everything_else/preview.sh` (executable): same staging commands as 2.1 but into `${TMPDIR:-/tmp}/manelici-stage`, then `bundle exec jekyll serve --source <stage> --destination <stage>/_site -l` with `PATH=/opt/homebrew/opt/ruby/bin:$PATH`, `BUNDLE_PATH=$HOME/.cache/bundle-manelici`, `BUNDLE_GEMFILE` pointing at a scratch Gemfile the script writes (eval_gemfile of `everything_else/Gemfile` + `csv base64 bigdecimal logger ostruct`), and `RUBYOPT=-r<shim> -W0` where the shim defines `Object#tainted?/taint/untaint`. Stage dir outside Dropbox by construction.
 - [ ] 2.4 Commit: `ci: build site from everything_else/ + root content via GitHub Actions`. Jose pushes both commits (Phase 1 + 2) together from VS Code.
 - [ ] 2.5 Watch Actions tab. Green → check `http://www.isabelamanelici.com/` shows bio; PDFs at `/files/CV_Manelici.pdf`; `/404.html` renders; `/sitemap.xml` exists. Red → kill criterion 1.
 
 ### Phase 3 — Content conversion (`main.md`)
 
-- [ ] 3.1 Top of file unchanged (logo/headshot `<div style="float:left…">`). Immediately after it insert:
+- [x] 3.1 Top of file unchanged (logo/headshot `<div style="float:left…">`). Immediately after it insert:
 
 ```html
 <!-- ============================================================
@@ -201,8 +201,8 @@ jobs:
      ============================================================ -->
 ```
 
-- [ ] 3.2 Remove `<div style="text-align: justify;" markdown="1">` and its `</div>`; add to `everything_else/assets/css/main.scss`: `.page__content p { text-align: justify; }` (paper lines end in hard breaks so justification does not stretch them).
-- [ ] 3.3 Convert each of the 10 `<p class="pub">…</p>` blocks to Markdown, e.g.:
+- [x] 3.2 Remove `<div style="text-align: justify;" markdown="1">` and its `</div>`; add to `everything_else/assets/css/main.scss`: `.page__content p { text-align: justify; }` (paper lines end in hard breaks so justification does not stretch them).
+- [x] 3.3 Convert each of the 10 `<p class="pub">…</p>` blocks to Markdown, e.g.:
 
 ```markdown
 **[Responsible Sourcing? Evidence from Costa Rica](/files/Responsible_Sourcing_CR.pdf)** [(link)](/files/Responsible_Sourcing_CR.pdf). [NBER WP 30683](https://www.nber.org/papers/w30683)  
@@ -212,20 +212,20 @@ Status: *Second round Revise-and-Resubmit* at the **American Economic Review**
 ```
 
   Every URL and every word of text is carried over verbatim; only markup changes. Journal names in `<em>` become `*…*`.
-- [ ] 3.4 CSS in `everything_else/assets/css/main.scss`: replace the four `p.pub` rules with equivalents on `.page__content p > strong:first-child`, `.page__content p > strong:first-child a` (color `#6b0000`, no underline, underline on hover), and give `.page__content p` the `1.1em` bottom margin the `.pub` rule had (bio paragraphs get slightly more air: accepted drift).
+- [x] 3.4 CSS in `everything_else/assets/css/main.scss`: replace the four `p.pub` rules with equivalents on `.page__content p > strong:first-child`, `.page__content p > strong:first-child a` (color `#6b0000`, no underline, underline on hover), and give `.page__content p` the `1.1em` bottom margin the `.pub` rule had (bio paragraphs get slightly more air: accepted drift).
 - [ ] 3.5 `preview.sh`, open localhost, compare side by side with `http://www.isabelamanelici.com/` (pre-conversion). Accept if headings, red bold titles, line breaks, link colours match; small spacing drift OK.
 - [ ] 3.6 Commit `content: paper entries as Markdown; edit-below-this-line guard`. Push. Verify live.
 
 ### Phase 4 — Instructions for Isabela
 
-- [ ] 4.1 Rewrite `everything_else/README.md` (≤ 40 lines): how to edit `main.md` in the browser, how to upload a PDF into `files/` and link it as `/files/Name.pdf` (no spaces in filenames), how to swap `images/headshot.jpg` (same filename), where to see build status (Actions tab), "if something breaks, email Jose; nothing is lost, every version is in History".
-- [ ] 4.2 Update `everything_else/docs/planning/decisions.md` "Open items": split item 5 into (a) CNAME/DNS migration — done 2026-09-03, and (b) Wix shutdown — moot, Wix plan expired; add "renew domain at Network Solutions/Wix before 2026-10-09"; add item "Pages now built by GitHub Actions from everything_else/, see this plan".
+- [x] 4.1 Rewrite `everything_else/README.md` (≤ 40 lines): how to edit `main.md` in the browser, how to upload a PDF into `files/` and link it as `/files/Name.pdf` (no spaces in filenames), how to swap `images/headshot.jpg` (same filename), where to see build status (Actions tab), "if something breaks, email Jose; nothing is lost, every version is in History".
+- [x] 4.2 Update `everything_else/docs/planning/decisions.md` "Open items": split item 5 into (a) CNAME/DNS migration — done 2026-09-03, and (b) Wix shutdown — moot, Wix plan expired; add "renew domain at Network Solutions/Wix before 2026-10-09"; add item "Pages now built by GitHub Actions from everything_else/, see this plan".
 - [ ] 4.3 Commit `docs: owner instructions and decisions update`. Push.
 
 ## Acceptance criteria
 
 - [ ] `git ls-files | cut -d/ -f1 | sort -u` prints exactly: `.github .gitignore everything_else files images main.md`.
-- [ ] `main.md` first line is `<div` (no `---`); `grep -c '^---' main.md` = 0.
+- [x] `main.md` first line is `<div` (no `---`); `grep -c '^---' main.md` = 0.
 - [ ] Workflow green on `main`; `http://www.isabelamanelici.com/` returns 200 with "Welcome to my website"; all 9 `/files/*.pdf` return 200; `/404.html` returns the template 404.
 - [ ] `grep -c 'class="pub"' main.md` = 0; every URL present in `f07605a:_pages/main.md` is present in new `main.md` (diff of sorted `grep -o 'https\?://[^)" ]*'` is empty).
 - [ ] `everything_else/preview.sh` serves the site locally on the Ruby-4 machine without touching the repo tree.
