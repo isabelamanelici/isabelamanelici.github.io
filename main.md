@@ -29,7 +29,7 @@ Note on Ph.D. admissions, RA and postdoc opportunities: [link](/files/PhD_Note.p
 
 **[Responsible Sourcing? Evidence from Costa Rica](/files/Responsible_Sourcing_CR.pdf)** [(link)](/files/Responsible_Sourcing_CR.pdf). [NBER WP 30683](https://www.nber.org/papers/w30683)  
 with [Alonso Alfaro-Ureña](https://sites.google.com/view/alfarourena/home), [Benjamin Faber](https://eml.berkeley.edu/~faberb/), [Cecile Gaubert](https://eml.berkeley.edu/~cecile.gaubert/), and [José P. Vasquez](https://jpvasquez-econ.github.io/)  
-Status: *Second round Revise-and-Resubmit* at the **American Economic Review**  
+Status: *Second round Revise-and-Resubmit* at the *American Economic Review*  
 [Trade Talks podcast episode (39 mins)](https://tradetalkspodcast.com/podcast/188-did-responsible-sourcing-by-multinationals-help-workers-in-poor-countries/), [VoxDev summary](https://voxdev.org/topic/firms/responsible-sourcing-theory-and-evidence-costa-rica), [VoxEU summary](https://cepr.org/voxeu/columns/responsible-sourcing-theory-and-evidence-costa-rica)
 
 **The Gains from Foreign Multinationals in an Economy with Distortions**  
@@ -40,6 +40,10 @@ Status: Draft available upon request
 with [Alonso Alfaro-Ureña](https://sites.google.com/view/alfarourena/home) and [José P. Vasquez](https://jpvasquez-econ.github.io/)  
 Status: New draft in progress  
 [ReVista (Harvard Review of Latin America) article](https://revista.drclas.harvard.edu/attracting-multinationals-to-boost-development-some-evidence-from-costa-rica/)
+
+**[The Anatomy of Domestic Production Networks: Evidence from Costa Rica](/files/Anatomy_Domestic_Network.pdf)** [(link)](/files/Anatomy_Domestic_Network.pdf)
+with [Alonso Alfaro-Ureña](https://sites.google.com/view/alfarourena), [Mariany Fuentes](https://lsa.umich.edu/econ/people/phd-students/marianyf0.html)[, José Ignacio González,](https://jigonzalez.com/) and [José P. Vasquez](https://jpvasquez-econ.github.io/)
+Status: Supersedes “Costa Rican Production Network: Stylized Facts” (2018)
 
 ## Peer-reviewed publications
 
