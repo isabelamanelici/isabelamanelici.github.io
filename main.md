@@ -41,8 +41,8 @@ with [Alonso Alfaro-Ureña](https://sites.google.com/view/alfarourena/home) and 
 Status: New draft in progress  
 [ReVista (Harvard Review of Latin America) article](https://revista.drclas.harvard.edu/attracting-multinationals-to-boost-development-some-evidence-from-costa-rica/)
 
-**[The Anatomy of Domestic Production Networks: Evidence from Costa Rica](/files/Anatomy_Domestic_Network.pdf)** [(link)](/files/Anatomy_Domestic_Network.pdf)
-with [Alonso Alfaro-Ureña](https://sites.google.com/view/alfarourena), [Mariany Fuentes](https://lsa.umich.edu/econ/people/phd-students/marianyf0.html)[, José Ignacio González,](https://jigonzalez.com/) and [José P. Vasquez](https://jpvasquez-econ.github.io/)
+**[The Anatomy of Domestic Production Networks: Evidence from Costa Rica](/files/Anatomy_Domestic_Network.pdf)** [(link)](/files/Anatomy_Domestic_Network.pdf)  
+with [Alonso Alfaro-Ureña](https://sites.google.com/view/alfarourena), [Mariany Fuentes](https://lsa.umich.edu/econ/people/phd-students/marianyf0.html)[, José Ignacio González,](https://jigonzalez.com/) and [José P. Vasquez](https://jpvasquez-econ.github.io/)  
 Status: Supersedes “Costa Rican Production Network: Stylized Facts” (2018)
 
 ## Peer-reviewed publications
